@@ -1,0 +1,122 @@
+Delivered-To: abhi3588@gmail.com
+Received: by 2002:ab0:3884:0:b0:86d:470e:6482 with SMTP id z4csp2336335uav;
+        Mon, 24 Mar 2025 20:14:51 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IE6kCIeS2EYHtQnTA0cpZKlWv+512vtj+NSdQgi04dZhqbjQfdEMJyOddb4fanChWmPGBU5
+X-Received: by 2002:a05:620a:178a:b0:7c5:ac06:af8 with SMTP id af79cd13be357-7c5d9f96366mr86725385a.9.1742872491657;
+        Mon, 24 Mar 2025 20:14:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1742872491; cv=none;
+        d=google.com; s=arc-20240605;
+        b=gA87JDDpMbYywv3CqidNiKaFXYb9r02vh9lWnDEgSrM1lxHEYTDd2EBKNxHV9yF+7K
+         ZUtwscgBgq8Dd1iTEDD9C442LITOTDehcs9kmPZN3viT3Yeo9AR3865yneq249hVB3p2
+         1OMINYRsEF6RL274ziHTEVupglx5M6qkYuWbsu84j0P6ug0jVIcAwIDg/F2HeZOfhwg4
+         OCCZxnTkASJUdqbjed/E82/RpXGVwksqeLJjJD+8PFdl4kIZhUZqLHuVWsTrp0n60uc8
+         jwc6J8k/5NWQ8CCcK3mOw4hl5g1gtk5o3BxX2dGu2GSSjP9JWVjzsDiNyCtMEZMdm5kH
+         tTfg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:feedback-id:list-unsubscribe-post:list-unsubscribe
+         :reply-to:to:from:subject:message-id:date:dkim-signature;
+        bh=UKMlIEuvBBTJH8iA8dtNTKLfFwKDzefTW/ff2UOMafE=;
+        fh=MtoYLKnO3g9zF4B4ZarcqQTOBZcLyGjT7hW3HIEl3Gs=;
+        b=H4CXW8I7ZdY8a9fRZIM1Tg67qIH+AA1PC97OceVzxCvWPo/wIW48aulzzPmSPFNVKY
+         53JcU0J8LQmqRHG8OSc6ehZceQKG27qLG3SFbPYtMkR0LmBfMrB9rnG7MnEhKX/bKe9t
+         uYO+4yTPlqbZQtkFHPiT2TySTItbXYqphleT/e0Taf855Zlxx5BXHLC7c5LSDvHINLtV
+         kpX7i1rHaRvt1YWOAfsX6xGc9wd6vYXMekrfDnWk8TE0xAo+3gMAxaxhdFqmPMhRA2cA
+         OeK7+V6Dxou0kWiOzWiUo+rFBvc5svF508YCUKqbK7YjH675qD/h4bfSYu4WSu+i82ak
+         sq6w==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@getujobs.com header.s=gu header.b=HVlqogee;
+       spf=pass (google.com: domain of bounce.cli1189-1170480-1170480-2099762465-2053-25629-44776-66-p2020@skill.getujobs.com designates 103.197.16.152 as permitted sender) smtp.mailfrom=bounce.cli1189-1170480-1170480-2099762465-2053-25629-44776-66-p2020@skill.getujobs.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=getujobs.com
+Return-Path: <bounce.cli1189-1170480-1170480-2099762465-2053-25629-44776-66-p2020@skill.getujobs.com>
+Received: from mail.cb1152.mlrctk.com (mail.cb1152.mlrctk.com. [103.197.16.152])
+        by mx.google.com with ESMTPS id af79cd13be357-7c5b9357a19si872703385a.424.2025.03.24.20.14.51
+        for <abhi3588@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-CHACHA20-POLY1305 bits=256/256);
+        Mon, 24 Mar 2025 20:14:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce.cli1189-1170480-1170480-2099762465-2053-25629-44776-66-p2020@skill.getujobs.com designates 103.197.16.152 as permitted sender) client-ip=103.197.16.152;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@getujobs.com header.s=gu header.b=HVlqogee;
+       spf=pass (google.com: domain of bounce.cli1189-1170480-1170480-2099762465-2053-25629-44776-66-p2020@skill.getujobs.com designates 103.197.16.152 as permitted sender) smtp.mailfrom=bounce.cli1189-1170480-1170480-2099762465-2053-25629-44776-66-p2020@skill.getujobs.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=getujobs.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ s=gu; d=getujobs.com; t=1742872048; h=subject:from:to;
+ bh=UKMlIEuvBBTJH8iA8dtNTKLfFwKDzefTW/ff2UOMafE=;
+ b=HVlqogee/45TZOCTXW3F8MmhrSwKRZEWT8tGu3cqndEpdjqg7Jow27xMSQ7kjZqho0Tn22
+ kpxnjvo1cNzOOk6DvVo0p//AmN61PcT7FcQKkSqoMUvOWpmJkJ0PavaRG4owI82OsGGkM6
+ 9yK9ah0dACfnRLC+4k5e/5pKz8Zq6SNmClsEs6YvSwrntHfX20j0Oo+DFGBTn6tSXmFni1
+ PBrY4cLgpwU3aDXyTDyVQcSWOjY9zRV2S7mn4zHNweFcuYLQWSqkmZHtN6anHVUeKCuhOh
+ vwoDMcpHFynsFQ9tCsf4Oih169qs7ul6hgRHBxeWSsTo31DaMRTxT3x3SZ/REg==
+Date: Tue, 25 Mar 2025 03:07:28 +0000
+Message-ID: <1742872048-MjA5OTc2MjQ2NS0xMTcwNDgw@skill.getujobs.com>
+Subject: Your NeuCard is waiting. Complete your application now...
+From: "Tata Neu HDFC" <hello@getujobs.com>
+To: abhi3588@gmail.com
+Reply-To: hello@getujobs.com
+List-Unsubscribe: <https://gutr.getujobs.com/us/BKYZPkFXnbbXAvYaMSAzZhGsVGfMBBhaVYanSAFdMvvHhgMcexgxqKMSAca>,
+ <mailto:unsub.cli1189-1170480-1170480-2099762465-2053-25629-44776-66-p2020@skill.getujobs.com?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-campaignid: 1170480
+X-SentFromServer: 103.197.16.152
+X-Subscriber-ID: 2099762465
+Feedback-ID: 13589:2099762465:1189:getujobsco
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary=938f3cb526232edd59daa2d617785a2a6a054beffe6961e2c5014854faf8
+
+--938f3cb526232edd59daa2d617785a2a6a054beffe6961e2c5014854faf8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+MSME Loan Offer 2025 Dear Applicant, Congratulations!
+---------------- Your Eligibility is confirmed for Tata NeuCard Your NeuCar=
+d is waiting. =E2=80=A2 Complete your application now. =E2=80=A2 0 Joining =
+fees =E2=80=A2 Welcome benefits Rs 1499 =E2=80=A2 Aceess 8 domestic &amp; 4=
+ international Airport Lounge per annum. Resume ApplicationIf you have any =
+questions, feel free to contact us at customercare@tataneu.com. **Sincerely=
+,** **Tata Neu Card**
+--938f3cb526232edd59daa2d617785a2a6a054beffe6961e2c5014854faf8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html> <html> <head> <meta charset=3D"UTF-8"> <meta name=3D"viewpo=
+rt" content=3D"width=3Ddevice-width, initial-scale=3D1.0"> <title>MSME Loan=
+ Offer 2025</title> <style> body { font-family: Arial, sans-serif; backgrou=
+nd-color: #f0f0f5; display: flex; justify-content: center; align-items: cen=
+ter; height: 100vh; margin: 0; padding: 20px; } .container { background: wh=
+ite; padding: 30px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, =
+0, 0.2); max-width: 420px; text-align: left; transition: transform 0.3s; } =
+.container:hover { transform: scale(1.02); } h2 { color: #333; margin-botto=
+m: 20px; } .details { background: #e6f7ff; padding: 15px; border-radius: 8p=
+x; margin-bottom: 20px; } p { font-size: 16px; margin: 10px 0; color: #555;=
+ } .button { display: inline-block; padding: 14px 28px; background-color: #=
+9b0038; color: white; text-decoration: none; font-size: 18px; font-weight: =
+bold; border-radius: 6px; transition: background 0.3s; } .button:hover { ba=
+ckground-color: #700027; } </style> </head><body> <table align=3D"center" w=
+idth=3D"600" cellpadding=3D"8" style=3D"background:white;border:2px solid w=
+hite;border-radius:12px;font-size:18px;font-family:Arial,Helvetica,sans-ser=
+if"> <tbody> <tr> <td> <div class=3D"container"> <p>Dear Applicant,</p> <h2=
+ style=3D"color: #9b0038;">Congratulations!</h2> <p>Your Eligibility is con=
+firmed for Tata NeuCard</p><p>Your NeuCard is waiting.</p> <div class=3D"de=
+tails"> <p>&#8226; Complete your application now.</p> <p>&#8226; 0 Joining =
+fees</p> <p>&#8226; Welcome benefits Rs 1499</p> <p>&#8226; Aceess 8 domest=
+ic & 4 international Airport Lounge per annum.</p> </div> <a  href=3D"https=
+://gutr.getujobs.com/links/BKYZPkFXnbbXAvYaMSAzZhGsVGfMBBhaVYanSAFdMvvHhgMc=
+exgxqKMSAca/2065373" class=3D"button"><span style=3D"color:#ffffff;">Resume=
+ Application</span></a> <p>If you have any questions, feel free to contact =
+us at <a href=3D"mailto:support@loanprovider.com">customercare@tataneu.com<=
+/a>.</p> <p><strong>Sincerely,</strong></p> <p><strong>Tata Neu Card</stron=
+g></p> </div></td> </tr> </tbody> </table> <table cellspacing=3D"0" cellpad=
+ding=3D"0" border=3D"0" width=3D"100%" style=3D"font-family:arial,sans-seri=
+f; font-size:12px; color:#888888; margin: 20px 0; width: 100%; text-align:c=
+enter;"> <tr><td style=3D"line-height: 25px;"><p><span style=3D"font-size:1=
+2px;line-height:150%;">If you no longer wish to receive our emails <a targe=
+t=3D"_blank" href=3D"https://gutr.getujobs.com/un/BKYZPkFXnbbXAvYaMSAzZhGsV=
+GfMBBhaVYanSAFdMvvHhgMcexgxqKMSAca">Click Here</a></span></p><p>&nbsp;</p><=
+/td></tr>     </table><span style=3D"display:none !important;" class=3D"pre=
+header"><img src=3D"https://gutr.getujobs.com/opens/BKYZPkFXnbbXAvYaMSAzZhG=
+sVGfMBBhaVYanSAFdMvvHhgMcexgxqKMSAca/blank.gif" alt=3D"open track" width=3D=
+"0" height=3D"0" style=3D"display:none !important;" /></span><div style=3D"=
+display:none"><a href=3D"https://gutr.getujobs.com/a/BkijqbKHAeiAnSAJZhGSEw=
+F" style=3D"display:none !important;">.</a></div> </body> </html>
+--938f3cb526232edd59daa2d617785a2a6a054beffe6961e2c5014854faf8--

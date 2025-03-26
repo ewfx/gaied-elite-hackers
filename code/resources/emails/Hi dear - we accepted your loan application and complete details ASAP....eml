@@ -1,0 +1,232 @@
+Delivered-To: abhi3588@gmail.com
+Received: by 2002:ab0:3884:0:b0:86d:470e:6482 with SMTP id z4csp1350063uav;
+        Sun, 23 Mar 2025 03:53:16 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGA7wjiQGbRVPIMY6yXeUAKWiNHul991TOraRb6JwaTYN8j0d2QLR7We4Rv0DWGbyEUJvas
+X-Received: by 2002:a05:620a:244e:b0:7c3:bae4:2339 with SMTP id af79cd13be357-7c5c0ded2c9mr304247585a.11.1742727196064;
+        Sun, 23 Mar 2025 03:53:16 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1742727196; cv=none;
+        d=google.com; s=arc-20240605;
+        b=eAhnMsnup5L/Sqq6VIje1gVJGfcDV4/toCmxAk5rhjBDUUk2LMGmiNEoIlCSlVrL7m
+         5NcCiZQvM+q1gvS2i4lL1sHo013olJgStGosSblfS6CPt4lTLwFiXQvlNch58HQAWQ5O
+         264GlmHbMumCn86Q+HPg/skj2xpecVonWlFlEqBrMz2v6+RGdeymsoagBs5lG5OG0cd0
+         W+04peA2rKgdctdB+8COmqdyDwnEybRGD2YXXtR4SuDY0/2M3sbml8OWskkRArjCLZiY
+         FcGjSsrb26blthbgOU7csdyFQ7NaeIKArTAlDzRqWWnIPtjYrV2kqdXQE8qlF442rKMx
+         g7kA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:feedback-id:list-unsubscribe-post:list-unsubscribe
+         :reply-to:to:from:subject:message-id:date:dkim-signature;
+        bh=1s8kmEqdw7d3p2yz/OiX1KeFLj4jf5CJSmCrzy9r7gM=;
+        fh=MtoYLKnO3g9zF4B4ZarcqQTOBZcLyGjT7hW3HIEl3Gs=;
+        b=U+OiFlzniki8V0CCb7lAjFZd5nGsBhgMSNHWwwXZwPn7ggnvk6tHj8N5n9UV07YJaW
+         rKlsGUbgMx1ubjA7e1frK8N06D1Ab2SH+sTz7xxPx5OctByWJBOwMzp8OFxFoBjC5+ut
+         O0OR2i+HrkuNLw8xgTA0JkPYZQRBE22EhJxSZwBUFOZ0sTXowoEkB5xuSX4aQ4GMfBZC
+         5gduiy235SO2tMJy6Wwz9iRbSgcdQohX05iYN9SLloyi8Q8G/CW2YnE9+3mJMdJgSCup
+         AxKbuwYcfyYzrR1w25Lbd+6wwPJ6zJNszGuZOEkeOCRmNVoIGSzUIttCEGj7rFXn7X30
+         QDcg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@getujobs.com header.s=gu header.b=foExK381;
+       spf=pass (google.com: domain of bounce.cli1189-1169597-1169597-2099762465-2056-25629-44776-66-p2020@skill.getujobs.com designates 103.197.16.155 as permitted sender) smtp.mailfrom=bounce.cli1189-1169597-1169597-2099762465-2056-25629-44776-66-p2020@skill.getujobs.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=getujobs.com
+Return-Path: <bounce.cli1189-1169597-1169597-2099762465-2056-25629-44776-66-p2020@skill.getujobs.com>
+Received: from mail.cb1155.mlrctk.com (mail.cb1155.mlrctk.com. [103.197.16.155])
+        by mx.google.com with ESMTPS id af79cd13be357-7c5b92cd1a8si532956485a.184.2025.03.23.03.53.15
+        for <abhi3588@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-CHACHA20-POLY1305 bits=256/256);
+        Sun, 23 Mar 2025 03:53:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce.cli1189-1169597-1169597-2099762465-2056-25629-44776-66-p2020@skill.getujobs.com designates 103.197.16.155 as permitted sender) client-ip=103.197.16.155;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@getujobs.com header.s=gu header.b=foExK381;
+       spf=pass (google.com: domain of bounce.cli1189-1169597-1169597-2099762465-2056-25629-44776-66-p2020@skill.getujobs.com designates 103.197.16.155 as permitted sender) smtp.mailfrom=bounce.cli1189-1169597-1169597-2099762465-2056-25629-44776-66-p2020@skill.getujobs.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=getujobs.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ s=gu; d=getujobs.com; t=1742727195; h=subject:from:to;
+ bh=1s8kmEqdw7d3p2yz/OiX1KeFLj4jf5CJSmCrzy9r7gM=;
+ b=foExK381hNg1D5vyWKITBIzurA4Gf3GNpvWBYLB1gXcUu1TWc1VSAIhP3OGT2o4/L2tkS8
+ Vzy89HIdBYXqwYfFPgTuxgew7rKvgBNzRHfBDvoxtsfy4Um33sH8PtOnX4mELtY/rbxZ6k
+ NLkLVLCWD+ahp63MDgGPWklxNo8p3wlnUVoMb8/1/LTj2aZrtcwC9G4bcHXQmZbAuJna8c
+ njJLjtvsjpBs7JxSqq3PtOLJDNGoutRYVow0zvIFfXqjT2TwD4RKasy/HIwJuQJOgoEN3l
+ 6hK3L6KB5rA/8n3I6wrvfquVQjw9yPB1rGwMTDGWmxuA4mBaVwx2nQPgitmAJA==
+Date: Sun, 23 Mar 2025 10:53:15 +0000
+Message-ID: <1742727195-MjA5OTc2MjQ2NS0xMTY5NTk3@skill.getujobs.com>
+Subject: Hi dear - we accepted your loan application and complete details
+ ASAP...
+From: "Finance Support" <hello@getujobs.com>
+To: abhi3588@gmail.com
+Reply-To: hello@getujobs.com
+List-Unsubscribe: <https://gutr.getujobs.com/us/kKiJPBfhqkBWZFzxMcAZjxWceGFMKkgZfJxqCafGMeVhhGMcVHGHqbMCAcA>,
+ <mailto:unsub.cli1189-1169597-1169597-2099762465-2056-25629-44776-66-p2020@skill.getujobs.com?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-campaignid: 1169597
+X-SentFromServer: 103.197.16.155
+X-Subscriber-ID: 2099762465
+Feedback-ID: 13570:2099762465:1189:getujobsco
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary=7ac08e22831f49207ec8aceb3670624378af80938601f762356f9ee02094
+
+--7ac08e22831f49207ec8aceb3670624378af80938601f762356f9ee02094
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+![ ](https://d1l8l3rp33cdzs.cloudfront.net/images/seamtechno/bogo9009w.png =
+" ")Congratulations, Your updated Credit Limit **for a Personal Loan** has =
+been expiring soon. - - 100% Digital online Process
+- - Zero Processing fees
+- - Personal Loan Upto Rs.5,00,000 Tap the button below to explore the bene=
+fits and avail this offer before it=E2=80=99s gone! **Get Your Loan Now** *=
+*Cheers, Team Bajaj Finserv** - - - - - - **This is an auto-generated email=
+. Please do not reply.** Approval of all financial products is at the sole =
+discretion of financial Institution. All trademarks used in this emailer ar=
+e the property of their respective owners. You are receiving this email bec=
+ause you have authorised to send you information about its products.
+--7ac08e22831f49207ec8aceb3670624378af80938601f762356f9ee02094
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Hi dear - we accepted your loan application and complete details=
+ ASAP...</title>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+" />
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0"/>
+    <style type=3D"text/css">
+      #outlook a {
+          padding: 0;
+      }
+      body {
+          width: 100% !important;
+          -webkit-text-size-adjust: none;
+          margin: 0;
+          padding: 0;
+      }
+      img {
+          border: none;
+          font-size: 14px;
+          height: auto;
+          line-height: 100%;
+          outline: none;
+          text-decoration: none;
+      }
+      .preheader {
+          display: none !important;
+      }
+     =20
+    </style>
+  </head>
+  <body>
+   =20
+   =20
+   =20
+<div id=3D":2cc" class=3D"a3s aiL"><u></u>
+
+
+
+
+<div>
+<div id=3D"m_-2611021518746753869:8fn">
+<div id=3D"m_-2611021518746753869:8e2">
+<div style=3D"background:#ffffff">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"background=
+-color:#ffffff;max-width:550px;margin:0 auto 10px auto">
+<tbody>
+<tr>
+<td width=3D"90%">
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"width:90%;background-color:#ffffff;padding:9px 0=
+px 10px 0;margin:0;line-height:1px;font-size:1px;display:block" width=3D"10=
+0%">
+<tbody>
+<tr>
+<td align=3D"left" style=3D"background-color:white"><a style=3D"background-=
+color:#ffffff"><img alt=3D" " src=3D"https://d1l8l3rp33cdzs.cloudfront.net/=
+images/seamtechno/bogo9009w.png" title=3D" " width=3D"50%" class=3D"CToWUd"=
+></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>&nbsp;<p style=3D"color:rgb(52,73,94);font-size:16px;font-family:lato,A=
+rial,sans-serif;line-height:23px;font-weight:normal;margin:0px;list-style:n=
+one;padding:0px 20px;letter-spacing:0.3px">Congratulations,<br>
+<br>
+Your updated Credit Limit <strong>for a Personal Loan&nbsp;</strong>has bee=
+n expiring soon.</p>
+<ul>
+<li style=3D"color:rgb(52,73,94);font-size:16px;font-family:lato,Arial,sans=
+-serif;line-height:23px;font-weight:normal;margin:0px;list-style:none;paddi=
+ng:0px 20px;letter-spacing:0.3px">- 100% Digital online Process</li>
+<li style=3D"color:rgb(52,73,94);font-size:16px;font-family:lato,Arial,sans=
+-serif;line-height:23px;font-weight:normal;margin:0px;list-style:none;paddi=
+ng:0px 20px;letter-spacing:0.3px">- Zero Processing fees</li>
+<li style=3D"color:rgb(52,73,94);font-size:16px;font-family:lato,Arial,sans=
+-serif;line-height:23px;font-weight:normal;margin:0px;list-style:none;paddi=
+ng:0px 20px;letter-spacing:0.3px">- Personal Loan Upto Rs.5,00,000</li>
+</ul>
+&nbsp;<br>
+&nbsp; &nbsp; &nbsp;Tap the button below to explore the benefits and avail =
+this offer before it=E2=80=99s gone!<br>
+&nbsp;<p style=3D"text-align:center;margin:0 0 15px 0"><a  href=3D"https://=
+gutr.getujobs.com/links/kKiJPBfhqkBWZFzxMcAZjxWceGFMKkgZfJxqCafGMeVhhGMcVHG=
+HqbMCAcA/2063024" style=3D"background:#0168b3;color:white;font-size:20px;pa=
+dding:6px 20px;border-radius:5px;text-align:left;display:inline-block;margi=
+n:5px 0 0 0;font-family:lato,Arial,sans-serif;line-height:18px" target=3D"_=
+blank"><b>Get Your Loan Now</b></a><b> </b></p><b> </b>
+<p style=3D"color:#34495e;font-size:16px;font-family:lato,Arial,sans-serif;=
+line-height:23px;font-weight:normal;margin:0;list-style:none;padding:0px 19=
+px 0px 20px;text-align:left;letter-spacing:.3px"><b>Cheers,<br>
+Team <span>Bajaj Finserv</span> </b></p><b> </b></td>
+</tr>
+<tr>
+<td style=3D"text-align:center">&nbsp;
+<hr style=3D"height:3px;background:#ccc;border:none;margin:5px 10px"><p sty=
+le=3D"margin:0 0 10px 0;color:#555;font-size:11px;padding:13px;font-family:=
+lato,Arial,sans-serif;letter-spacing:.2px;text-align:justify"><strong style=
+=3D"font-size:12px;padding:0 0 10px 0;display:block">This is an auto-genera=
+ted email. Please do not reply.</strong> Approval of all financial products=
+ is at the sole discretion of financial Institution. All trademarks used in=
+ this emailer are the property of their respective owners. You are receivin=
+g this email because you have authorised&nbsp;to send you information about=
+ its
+products.</p></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div>
+</div>
+</div>
+
+    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" =
+style=3D"font-family:arial,sans-serif; font-size:12px; color:#888888; margi=
+n: 20px 0; width: 100%; text-align:center;">
+      <tr><td style=3D"line-height: 25px;"><p><span style=3D"font-size:12px=
+;line-height:150%;">To remove email address from all future correspondence =
+<a target=3D"_blank" href=3D"https://gutr.getujobs.com/un/kKiJPBfhqkBWZFzxM=
+cAZjxWceGFMKkgZfJxqCafGMeVhhGMcVHGHqbMCAcA">Click Here</a></span></p><p>&nb=
+sp;</p></td></tr>
+     =20
+     =20
+     =20
+     =20
+    </table>
+    <span style=3D"display:none !important;" class=3D"preheader"><img src=
+=3D"https://gutr.getujobs.com/opens/kKiJPBfhqkBWZFzxMcAZjxWceGFMKkgZfJxqCaf=
+GMeVhhGMcVHGHqbMCAcA/blank.gif" alt=3D"open track" width=3D"0" height=3D"0"=
+ style=3D"display:none !important;" /></span><div style=3D"display:none"><a=
+ href=3D"https://gutr.getujobs.com/a/BkIzMbkgzFZHRsAJzhwSeWF" style=3D"disp=
+lay:none !important;">.</a></div>
+  </body>
+</html>
+
+--7ac08e22831f49207ec8aceb3670624378af80938601f762356f9ee02094--
